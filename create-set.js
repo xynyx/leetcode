@@ -39,7 +39,7 @@ RandomizedSet.prototype.remove = function(val) {
   
   // Swap val with last element in set
   this.set[index] = lastValue;
-  this.set[this.set.length - 1] = currentValue;
+  this.set[size - 1] = currentValue;
   
   // To keep this fn O(1), pop() now that the current val is swapped to be the last element
   this.set.pop();
